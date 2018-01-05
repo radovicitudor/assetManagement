@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ro.sci.asset.model">
+
+    <class name="Asset" table="ASSET">
+        <id name="assetId" column="ASSET_ID">
+            <generator class="native"/>
+        </id>
+        <property name="dateOfAdd" type="timestamp" column="DATE_OF_ADD"/>
+        <property name="assetName" column="ASSET_NAME"/>
+        <property name="serviceTag" column="SERVICE_TAG"/>
+    </class>
+
+</hibernate-mapping>

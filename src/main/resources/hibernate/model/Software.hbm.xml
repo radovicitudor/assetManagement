@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="ro.sci.asset.model">
+
+    <class name="Software" table="SOFTWARE">
+        <id name="assetId" column="ASSET_ID">
+            <generator class="native"/>
+        </id>
+        <property name="softwareAddDate" type="timestamp" column="SOFTWARE_ADD_DATE"/>
+        <property name="softwareId" type="int" column="SOFTWARE_ID"/>
+        <property name="assetID" type="int" column="ASSET_ID"/>
+        <property name="assetName" type="string" column="ASSET_NAME"/>
+        <property name="softwareName" type="string" column="SOFTWARE_NAME"/>
+        <property name="softwareSerial" type="string" column="SOFTWARE_SERIAL"/>
+        <property name="softwareSerial" type="string" column="SOFTWARE_SERIAL"/>
+        <property name="description" type="string" column="DESCRIPTION"/>
+        <!--private Category category;-->
+    </class>
+
+</hibernate-mapping>
+
+
